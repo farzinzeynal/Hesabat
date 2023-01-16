@@ -47,22 +47,22 @@ class HomeActivity : AppCompatActivity() {
         }
 
         btnIncreaseDollar.setOnClickListener {
-            val dialog = ValueInputDialog()
+            val dialog = ValueInputDialog(applicationContext,"DOLLAR","PLUS")
             dialog.show(supportFragmentManager,"INCRASE_DOLLAR")
         }
 
         btnIncreaseRuble.setOnClickListener {
-            val dialog = ValueInputDialog()
+            val dialog = ValueInputDialog(applicationContext, "RUBLE", "PLUS")
             dialog.show(supportFragmentManager,"INCRASE_RUBLE")
         }
 
         btnDereaseDollar.setOnClickListener {
-            val dialog = ValueInputDialog()
+            val dialog = ValueInputDialog(applicationContext, "DOLLAR", "MINUS")
             dialog.show(supportFragmentManager,"DECRASE_DOLLAR")
         }
 
         btnDereaseRuble.setOnClickListener {
-            val dialog = ValueInputDialog()
+            val dialog = ValueInputDialog(applicationContext, "RUBLE","MINUS")
             dialog.show(supportFragmentManager,"DECRASE_RUBLE")
         }
     }
