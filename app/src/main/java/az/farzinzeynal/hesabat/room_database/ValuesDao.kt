@@ -21,6 +21,4 @@ interface ValuesDao {
     @Query("SELECT * FROM rubbleAccTable")
     fun getRubleValues(): MutableList<RubleAccDbModel>
 
-
-
 }

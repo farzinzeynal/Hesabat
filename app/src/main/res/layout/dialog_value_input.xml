@@ -11,6 +11,7 @@
         android:layout_margin="20dp">
 
         <TextView
+            android:id="@+id/valueTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Dollar Məbləğ:"
@@ -22,15 +23,40 @@
             android:layout_gravity="center_horizontal">
         </TextView>
 
-        <EditText
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/enretedValue"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="numberDecimal"
             android:layout_marginTop="20dp"
             android:layout_marginHorizontal="30dp"
-            android:paddingVertical="20dp">
-        </EditText>
+            android:paddingVertical="10dp"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                >
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/valueHolder"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="30dp"
+            android:paddingVertical="10dp"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text">
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
 
 
 

@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace 'az.farzinzeynal.hesabat'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "az.farzinzeynal.hesabat"

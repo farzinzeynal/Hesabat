@@ -12,7 +12,7 @@ import androidx.room.PrimaryKey
 data class RubleAccDbModel(
     @PrimaryKey(autoGenerate = true)
     var id: Int =0,
-    var dollarValue : Double,
+    var rubleValue : Double,
     var from: String?,
     var to: String,
     var date: String?,
